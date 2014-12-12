@@ -22,13 +22,13 @@ var filter = function (table, texts, options) {
 
 	restoreCommentedRows(table);
 
-	// TODO: collect all from multiple tBodies, test it
-	var rows = table.rows.length > 0 ? table.rows : table.tBodies[0].rows;
+	var rows = util.getBodyRows(table);
 
 	for (var i = rows.length - 1; i >= 0; i--) {
 		var row = rows[i];
 
-		if(row.parentNode.tagName === 'THEAD') {
+		var parentTagName = row.parentNode.tagName;
+		if(parentTagName === 'THEAD' || parentTagName === 'TFOOT') {
 			continue;
 		}
 
