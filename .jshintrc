@@ -1,0 +1,31 @@
+{
+  "bitwise": true,
+  "camelcase": true,
+  "curly": true,
+  "eqeqeq": true,
+  "forin": true,
+  "es3": true,
+  "freeze": true,
+  "immed": true,
+  "latedef": "nofunc",
+  "newcap": true,
+  "noarg": true,
+  "noempty": true,
+  "nonew": true,
+  "plusplus": false,
+  "quotmark": true,
+  "undef": true,
+  "unused": true,
+  "regexp": true,
+  "strict": false,
+  "trailing": true,
+  "validthis": true,
+  "browser": true,
+  "devel": true,
+  "jquery": true,
+  "maxparams": 3,
+  "maxdepth": 3,
+  "globals": {
+    "require": false, "define": false, "module": false, "expect": false, "describe": false, "it": false, "jest": false
+  }
+}
