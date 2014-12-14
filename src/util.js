@@ -9,9 +9,6 @@ var util = {
 		var div = document.createElement('div');
 		div.innerHTML = html;
 		return div.firstChild;
-	},
-	getBodyRows: function(table) {
-		return table.rows//.length > 0 ? table.rows : table.tBodies[0].rows;
 	}
 };
 

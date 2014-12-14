@@ -11,6 +11,7 @@ var filter = function (table, texts, options) {
 	// TODO: util.mergeOptions
 	options = options || {};
 	for (var attr in defaultOptions) {
+		/*jshint -W089 */
 		if (!options.hasOwnProperty(attr)) {
 			options[attr] = defaultOptions[attr];
 		}
@@ -22,7 +23,7 @@ var filter = function (table, texts, options) {
 
 	restoreCommentedRows(table);
 
-	var rows = util.getBodyRows(table);
+	var rows = table.rows;
 
 	for (var i = rows.length - 1; i >= 0; i--) {
 		var row = rows[i];
