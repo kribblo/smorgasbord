@@ -8,14 +8,7 @@ var defaultOptions = {
 
 var filter = function (table, texts, options) {
 
-	// TODO: util.mergeOptions
-	options = options || {};
-	for (var attr in defaultOptions) {
-		/*jshint -W089 */
-		if (!options.hasOwnProperty(attr)) {
-			options[attr] = defaultOptions[attr];
-		}
-	}
+	options = util.mergeOptions(options, defaultOptions);
 
 	if (!options.caseSensitive) {
 		texts = util.arrayToUpperCase(texts);

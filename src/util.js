@@ -5,10 +5,25 @@ var util = {
 		}
 		return inArray;
 	},
+
 	makeElement: function(html) {
 		var div = document.createElement('div');
 		div.innerHTML = html;
 		return div.firstChild;
+	},
+
+	mergeOptions: function(options, defaultOptions) {
+		options = options || {};
+		defaultOptions = defaultOptions || {};
+
+		for (var attr in defaultOptions) {
+			/*jshint -W089 */
+			if (!options.hasOwnProperty(attr)) {
+				options[attr] = defaultOptions[attr];
+			}
+		}
+
+		return options;
 	}
 };
 
