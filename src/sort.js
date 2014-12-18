@@ -12,7 +12,8 @@ var types = {
 	AMERICAN_DATE: 'AMERICAN DATE'
 };
 
-var sort = function (table, column, options) {
+var sort = function sort(table, column, options) {
+	'use strict';
 
 	var defaultOptions = {
 		type: types.ALPHABETIC,

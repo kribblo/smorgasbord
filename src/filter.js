@@ -7,6 +7,7 @@ var defaultOptions = {
 };
 
 var filter = function (table, texts, options) {
+	'use strict';
 
 	options = util.mergeOptions(options, defaultOptions);
 

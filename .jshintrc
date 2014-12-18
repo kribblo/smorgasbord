@@ -22,7 +22,6 @@
   "validthis": true,
   "browser": true,
   "devel": true,
-  "jquery": true,
   "maxparams": 3,
   "maxdepth": 3,
   "globals": {
