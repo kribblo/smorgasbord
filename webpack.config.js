@@ -12,7 +12,8 @@ module.exports = {
 			output: {
 				beautify: true,
 				bracketize: true,
-				width: 160
+				width: 160,
+				comments: /jshint/
 			},
 			compress: {
 				sequences: false,
