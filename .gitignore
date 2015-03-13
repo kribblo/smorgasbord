@@ -1,4 +1,4 @@
-# Created by .gitignore support plugin (hsz.mobi)
 *.iml
 .idea
-npm-debug.log
+js
+node_modules
