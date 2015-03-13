@@ -7,7 +7,10 @@
   },
   "author": "Kristoffer Lundén",
   "license": "MIT",
-  "repository": "git@github.com:kribblo/smorgasbord.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kribblo/smorgasbord.git"
+  },
   "devDependencies": {
     "jest-cli": "^0.4.0",
     "webpack": "^1.7.3"
