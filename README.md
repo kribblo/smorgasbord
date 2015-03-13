@@ -24,7 +24,17 @@ TODO
 
 Webpack is used to build the final product.
 
+Install the executable
+
+	npm install -g webpack
+
+Build the standalone scripts
+
 	webpack
+
+Build jquery plugin
+
+	webpack --config webpack.config.jquery.js
 
 ### Testing
 
